@@ -1,0 +1,14 @@
+.mat-list-item{
+    color:rgb(149, 149, 149);
+}
+.mat-divider{
+    border-top-width: 3px;
+}
+
+.mat-list-base {
+    padding-top: 0;
+}
+
+.mat-list-base .mat-list-item{
+    height: 70px;
+}
