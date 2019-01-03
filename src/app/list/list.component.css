@@ -12,3 +12,10 @@
 .mat-list-base .mat-list-item{
     height: 70px;
 }
+
+.black{
+    color: #000;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}

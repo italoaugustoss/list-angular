@@ -1,10 +1,11 @@
+<app-loader *ngIf="!hidden"></app-loader> 
 <mat-action-list>
-  <mat-list-item (click)="openDialog()" *ngFor="let lista of list; let i = index">
-      {{showIndex(i)}} - {{lista.name}}
+  <mat-list-item *ngFor="let lista of list; let i = index">
+<span class="black">{{showIndex(i)}}</span>  {{lista.name}}
     <mat-divider></mat-divider>    
   </mat-list-item>
 </mat-action-list>
 <div class="example-button-row align-center">
-  <app-button (onClick)="handlePrev()" [customClass]="classPrev" [label]="labelPrev"></app-button>
-  <app-button (onClick)="handleNext()" [label]="labelNext"></app-button>
+  <app-button (onClick)="handlePrev()" [disabledButton]="disableButton('prevPage')" [label]="labelPrev"></app-button>
+  <app-button (onClick)="handleNext()" [disabledButton]="disableButton('nextPage')" [label]="labelNext"></app-button>
 </div>

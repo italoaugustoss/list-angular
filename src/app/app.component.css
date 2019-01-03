@@ -10,3 +10,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+.mat-progress-spinner.mat-progress-spinner-indeterminate-animation[mode=indeterminate] circle{
+    stroke: #FFF !important;
+}

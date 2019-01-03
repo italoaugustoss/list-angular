@@ -4,17 +4,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { ButtonComponent } from './button/button.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    ButtonComponent
+    ButtonComponent,
+    LoaderComponent
   ],
 
   imports: [
@@ -24,6 +27,7 @@ import { ButtonComponent } from './button/button.component';
     MatButtonModule,
     MatListModule,
     HttpClientModule,
+    MatProgressSpinnerModule
   ],
 
   providers: [],
